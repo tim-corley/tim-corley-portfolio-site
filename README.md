@@ -8,4 +8,4 @@ Please visit my site in order to:
 - [x] browse thoughts / insights / tips
 - [x] get in touch with me
 
-## [tim-corley.com](https://www.tim-corley.com)
+## [tim-corley.com](http://www.tim-corley.com)
