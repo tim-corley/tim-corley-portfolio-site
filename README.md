@@ -4,8 +4,8 @@ This is a place for all things Web Dev.
 ## Welcome!
 Please visit my site in order to:
 - [x] get a sense of who I am
-- [x] explore my projects
-- [x] read thoughts / insights / tips
-- [x] get in touch
+- [x] explore some of my projects
+- [x] browse thoughts / insights / tips
+- [x] get in touch with me
 
-## COMING SOON!
+## [tim-corley.com](https://www.tim-corley.com)

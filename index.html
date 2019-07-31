@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <title>WORK IN PROGRESS 🛠</title>
 </head>
@@ -65,9 +66,35 @@
     -- the new site will be up shortly --
   </p>
   <p>
-    please check back in a few days
+    please check back in a few days <br>
+    or send me a message...
   </p>
-
+    <br>
+    <br>
+      <section id="contact">
+      <h1 class="section-header">CONTACT</h1>
+        <form class="form-center" role="form" action="https://formspree.io/contact@tim-corley.com" method="POST">
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" id="name" placeholder="YOUR NAME" name="name" value="">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="email" class="form-control" id="email" placeholder="YOUR EMAIL" name="email" value="">
+            </div>
+          </div>
+          <textarea class="form-control" rows="10" placeholder="YOUR MESSAGE" name="message"></textarea>
+          <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+            <div class="button">
+              <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+            </div>
+          </button>
+        </form>
+      </div>
+    </section>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
