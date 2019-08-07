@@ -1,0 +1,47 @@
+.sticky-topbar {
+	width: 100%;
+}
+.top-bar {
+  padding: 2% 0;
+}
+.top-bar-right {
+  padding-right: 2%;
+}
+.container {
+  margin: auto 2%;
+}
+
+/* slide-in border effect */
+.card {
+  position: relative;
+  width: 300px;
+  flex: 1 1 100%;
+  background: white;
+}
+.card_a::before, .card_a::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: opacity .38s ease-in-out, transform .35s ease-in-out;
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+}
+.card_a::before {
+  transform: scale3d(0, 1, 1);
+  transform-origin: left top;
+  border-top: 1px solid #acacac;
+  border-bottom: 1px solid #acacac;
+}
+.card_a::after {
+  transform: scale3d(1, 0, 1);
+  transform-origin: right top;
+  border-right: 1px solid #acacac;
+  border-left: 1px solid #acacac;
+}
+.card_a:hover::before, .card_a:hover::after, .card_a:focus::before, .card_a:focus::after {
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "tim-corley.github.io",
+  "version": "1.0.0",
+  "description": "static portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@personal:tim-corley/tim-corley.github.io.git"
+  },
+  "author": "tim-corley",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "foundation-sites": "^6.5.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
