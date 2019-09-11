@@ -1,0 +1,27 @@
+// Margin & Padding
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts {
+  // All Around Margin
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  // Vertical Margin
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  // All Around Padding
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  // Vertical Padding
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+  .p-sides {
+    padding-left: 2rem;
+  }
+}
