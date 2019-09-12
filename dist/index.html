@@ -9,7 +9,7 @@
     <title>Materialize Sandbox - Widgets</title>
   </head>
   <body>
-    <!-- NAV -->
+    <!-- STICKY NAV & SIDENAV (Mobile) -->
     <header>
       <div id="navbar" class="navbar-fixed scrollspy">
         <nav class="black">
@@ -22,6 +22,7 @@
                   <li><a href="#projects">Projects</a></li>
                   <li><a href="#contact">Contact</a></li>
                 </ul>
+              <!-- SIDENAV -->
               <ul class="right sidenav" id="nav-mobile">
                 <li class="hide-on-small-only"><a href="index.html"><i class="material-icons">arrow_back</i></a></li>
                 <li>
@@ -47,358 +48,226 @@
       </div>
     </header>
 
-    <div id="index-banner" class="parallax-container">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <br><br>
-          <h1 class="header center teal-text text-lighten-2">Parallax Theme</h1>
-          <div class="row center">
-            <h5 class="header col s12 light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h5>
+    <main>
+      <!-- TOP BANNER -->
+      <div id="index-banner" class="parallax-container">
+        <div class="dark-overlay">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <br><br>
+            <h1 class="header center white-text">Welcome!</h1>
+            <h2 class="center white-text">My name is Tim.</h2>
+            <div class="row center">
+              <h6 class="header col s12 white-text">I'm a web developer and this is my portfolio.</h6>
+            </div>
+            <div class="row center">
+              <a class="waves-effect waves-light btn cyan accent-4" href="#contact">Email Me<i class="material-icons left">email</i></a>
+              <!-- <button class="btn cyan accent-4"><a href="#contact"><i class="material-icons left">email</i>Email Me</a></button> -->
+            </div>
+            <br><br>
           </div>
-          <div class="row center">
-            <a href="#" class="btn-large waves-effect waves-light purple lighten-1">Find more</a>
-          </div>
-          <br><br>
-
+        </div>
+        <div class="parallax"><img src="https://source.unsplash.com/aHhhdKUP77M/" alt="Unsplashed background img 2"></div>
         </div>
       </div>
-      <div class="parallax"><img src="https://source.unsplash.com/random/1600x900/?bridge" alt="Unsplashed background img 2"></div>
-    </div>
 
 
-    <div class="container">
-      <div class="section">
-
-        <!--   Icon Section   -->
-        <div class="row">
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center" style="color:#333"><i class="material-icons">pages</i></h2>
-              <h5 class="center">Feature one</h5>
-
-              <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+      <div class="container">
+        <div class="section" style="width: 100%">
+          <!--   ABOUT (w/ Resume)-->
+          <div class="row">
+            <div class="col s12 l4">
+              <h5 class="center cyan-text accent-4">My Story</h5>
+              <p class="light just p-sides">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusamus distinctio dolorem eligendi sit numquam provident culpa rem rerum illum, consequuntur, reiciendis hic nisi maxime inventore eos, doloribus voluptatem quod aliquid aliquam minima consectetur nemo labore dicta. Inventore provident velit, commodi officia ipsam perferendis voluptate pariatur, sint eveniet asperiores. Recusandae ducimus quos aperiam porro repellendus maiores quas ex obcaecati ipsa?</p>
+              <div class="row center">
+                <a class="waves-effect waves-light btn cyan accent-4" href="img/PDF_Tester.pdf" download="T.Corley-Resume[2019].pdf">Download Resume<i class="material-icons left">cloud_download</i></a>
+                <!-- <button class="btn cyan accent-4"><a href="img/PDF_Tester.pdf" download="T.Corley_Resume_[2019]">Download Resume</a><i class="material-icons left">cloud_download</i></button> -->
+              </div>
+            </div>
+            <!-- IMAGE -->
+            <div class="col s12 l4">
+              <div class="responsive-img">
+                <img src="https://source.unsplash.com/550x500/?tree" alt="" style="max-width: 100%">
+              </div>
+            </div>
+            <!-- INFO LIST -->
+            <div class="col s12 l4">
+              <h5 class="center cyan-text accent-4">Personal Info</h5>
+              <div class="row">
+                <ul class="info-list p-sides center-on-small-only">
+                  <li><strong>Name: </strong> Tim Corley</li>
+                  <li><strong>Age: </strong> 31</li>
+                  <li><strong>Phone: </strong> (650) 880-2115</li>
+                  <li><strong>Email: </strong> contact@tim-corley.com</li>
+                  <li><strong>Location: </strong> Boston, MA</li>
+                </ul>
+              </div>
+              <div class="row center">
+                <div class="col s4"><a href="https://www.linkedin.com/in/tim-corley" class="btn-floating cyan accent-4 btn-large"><ion-icon name="logo-linkedin"></ion-icon></a></div>
+                <div class="col s4"><a href="https://github.com/tim-corley" class="btn-floating cyan accent-4 btn-large"><ion-icon name="logo-github"></ion-icon></a></div>
+                <div class="col s4"><a href="https://www.instagram.com/corley_tim/" class="btn-floating cyan accent-4 btn-large"><ion-icon name="logo-instagram"></ion-icon></a></div>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center" style="color:#333"><i class="material-icons">share</i></h2>
-              <h5 class="center">Feature two</h5>
-
-              <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+      <!-- SKILLS  -->
+      <div class="parallax-container valign-wrapper scrollspy" id="skills">
+        <div class="dark-overlay">
+          <div class="section no-pad-bot">
+            <div class="container">
+              <div class="row center">
+                <h3 class="header col s12" style="color: #fff;">Skills</h3>
+              </div>
             </div>
           </div>
-
-          <div class="col s12 m4">
-            <div class="icon-block">
-              <h2 class="center" style="color:#333"><i class="material-icons">public</i></h2>
-              <h5 class="center">Feature three</h5>
-              <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
-    <div class="parallax-container valign-wrapper">
-      <div class="section no-pad-bot">
-        <div class="container">
-          <div class="row center">
-            <h5 class="header col s12" style="color: #333;">Vertically centered text</h5>
-          </div>
+          <div class="parallax"><img src="https://source.unsplash.com/aHhhdKUP77M/" alt="img"></div>
         </div>
       </div>
-      <div class="parallax"><img src="https://source.unsplash.com/random/1600x900/?bridge" alt="img"></div>
-    </div>
-
-    <div class="container section scrollspy" id="projects">
-      <div class="section">
-        <br>
-        <br>
-        <h4 class="center">Our Work</h4>
-        <br>
-        <div class="row">
-          <div class="col s6">
-          <img class="materialboxed responsive-img" data-caption="Description about the work or project"  src="images/blur-flowers-nature-471-827x550.jpg">
-          </div>
-          <div class="col s6">
-          <img class="materialboxed responsive-img" data-caption="Description about the work or project"  src="images/1415117217bc45x.jpg">
-          </div>
-        </div><!--row-->
-
-         <div class="row">
-          <div class="col s6">
-          <img class="materialboxed responsive-img" data-caption="Description about the work or project" src="images/1397154567yttyy.jpg">
-          </div>
-          <div class="col s6">
-          <img class="materialboxed responsive-img" data-caption="Description about the work or project" src="images/1399827845b0i1k.jpg">
-          </div>
-        </div><!--row-->
-
-        <div class="center">
-          <a class="waves-effect waves-light btn purple lighten-1">View more</a>
-        </div>
-
-      </div>
-    </div>
-    <!-- <div id="navbar" class="navbar-fixed scrollspy">
-      <nav class="black">
-        <div class="nav-wrapper container">
-        	<div class="container"> <a href="#navbar" class="brand-logo">Tim Corley</a></div>
-
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul> -->
-
-
-
-    <div style="height:500px"></div>
-    <div class="container">
-
-      <!-- SPLASH -->
-
-      <!-- ABOUT (w/ contact info - social icons - download resume) -->
-
-      <!-- SKILLS -->
 
       <!-- PROJECTS -->
+      <div class="container section scrollspy" id="projects">
+        <div class="section">
+          <h4 class="center">Projects</h4>
+          <br>
+            <div class="row">
 
-      <!-- BLOG -->
-
-      <!-- CONTACT (email form) -->
-
-      <!-- CAROUSEL -->
-      <h1>CAROUSEL</h1>
-      <div class="carousel">
-        <a href="#one!" class="carousel-item">
-          <img src="https://source.unsplash.com/random/300x300/?waves" alt="">
-        </a>
-        <a href="#two!" class="carousel-item">
-          <img src="https://source.unsplash.com/random/300x300/?beach" alt="">
-        </a>
-        <a href="#three!" class="carousel-item">
-          <img src="https://source.unsplash.com/random/300x300/?water" alt="">
-        </a>
-        <a href="#four!" class="carousel-item">
-          <img src="https://source.unsplash.com/random/300x300/?rain" alt="">
-        </a>
-        <a href="#five!" class="carousel-item">
-          <img src="https://source.unsplash.com/random/300x300/?lake" alt="">
-        </a>
-      </div>
-
-      <!-- CAROUSEL FULL SLIDER -->
-      <h1>CAROUSEL SLIDER</h1>
-      <div class="carousel carousel-slider">
-        <a href="#one!" class="carousel-item">
-          <img src="https://source.unsplash.com/random/800x400/?waves" alt="">
-        </a>
-        <a href="#two!" class="carousel-item">
-          <img src="https://source.unsplash.com/random/800x400/?beach" alt="">
-        </a>
-        <a href="#three!" class="carousel-item">
-          <img src="https://source.unsplash.com/random/800x400/?water" alt="">
-        </a>
-        <a href="#four!" class="carousel-item">
-          <img src="https://source.unsplash.com/random/800x400/?rain" alt="">
-        </a>
-        <a href="#five!" class="carousel-item">
-          <img src="https://source.unsplash.com/random/800x400/?lake" alt="">
-        </a>
-      </div>
-
-      <!-- COLLAPSIBLE -->
-      <h1>COLLAPSIBLE</h1>
-      <ul class="collapsible" data-collapsible="accordion">
-        <li>
-          <div class="collapsible-header">
-            <i class="material-icons">filter_drama</i>FIRST
-          </div>
-          <div class="collapsible-body">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ipsa ipsum modi!</span>
-          </div>
-        </li>
-        <li class="active">
-          <div class="collapsible-header">
-            <i class="material-icons">filter_drama</i>SECOND
-          </div>
-          <div class="collapsible-body">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, amet.</span>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header">
-            <i class="material-icons">filter_drama</i>SECOND
-          </div>
-          <div class="collapsible-body">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci corporis saepe, cupiditate consectetur totam, doloremque nesciunt.</span>
-          </div>
-        </li>
-      </ul>
-
-      <!-- TOASTS | https://materializecss.com/toasts.html-->
-      <h1>TOASTS</h1>
-      <div id="toast-container">
-        <!-- toast will appear here, can adjust position in css -->
-      </div>
-
-      <a onclick="M.toast({html: 'Success!', classes: 'rounded'}, 2000)" class="btn">submit</a>
-
-
-      <!-- TOOLTIPS -->
-      <h1>TOOLTIPS</h1>
-      <a href="" class="btn tooltipped" data-position="top" data-tooltip="I'm a tooltip!">Hover Me</a>
-      <a href="" class="btn tooltipped" data-position="bottom" data-tooltip="I'm a tooltip!">Hover Me</a>
-      <a href="" class="btn tooltipped" data-position="left" data-tooltip="I'm a tooltip!">Hover Me</a>
-      <a href="" class="btn tooltipped" data-position="right" data-tooltip="I'm a tooltip!">Hover Me</a>
-
-
-      <!-- DROPDOWN -->
-      <h1>DROPDOWN</h1>
-      <!-- Dropdown Trigger -->
-      <a href="#" class="dropdown-trigger btn" data-target="dropdown1">Dropdown</a>
-
-      <!-- Dropdown Structure -->
-      <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="#!">one</a></li>
-        <li><a href="#!">two</a></li>
-        <li class="divider" tabindex="-1"></li>
-        <li><a href="#!">three</a></li>
-        <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-      </ul>
-
-      <!-- MATERIAL BOXED -->
-      <h1>MATERIAL BOXED</h1>
-
-      <img src="https://source.unsplash.com/random/?city" width="650" alt="city" class="materialboxed" data-caption="an image of a city">
-
-      <!-- SLIDER -->
-      <h1>SLIDER</h1>
-      <div class="slider">
-        <ul class="slides">
-          <li>
-            <img src="https://source.unsplash.com/random/?trees" alt="">
-            <div class="caption left-align">
-              <h3>Here is the tagline</h3>
-                <h5 class="light grey-text test-lighten-3">this is the subtitle</h5>
+              <div class="col s12 m6">
+                <div class="card medium hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://source.unsplash.com/u2Ru4QBXA5Q/">
+                  </div>
+                  <!-- looks bad on mobile, too tall -->
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-action">
+                    <!-- use icons here instead & add tooltip for text -->
+                    <a href="#">View link</a>
+                    <a href="#">GitHub link</a>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
               </div>
-            </img>
-          </li>
-          <li><img src="https://source.unsplash.com/random/?forest" alt="">
-              <div class="caption center-align">
-                <h3>Here is the tagline</h3>
-                  <h5 class="light grey-text test-lighten-3">this is the subtitle</h5>
+
+              <div class="col s12 m6">
+                <div class="card medium hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://source.unsplash.com/u2Ru4QBXA5Q/">
+                  </div>
+                  <!-- looks bad on mobile, too tall -->
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-action">
+                    <!-- use icons here instead & add tooltip for text -->
+                    <a href="#">View link</a>
+                    <a href="#">GitHub link</a>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
               </div>
-            </img>
-          </li>
-          <li><img src="https://source.unsplash.com/random/?leaves" alt="">
-              <div class="caption right-align">
-                <h3>Here is the tagline</h3>
-                  <h5 class="light grey-text test-lighten-3">this is the subtitle</h5>
+
+              <div class="col s12 m6">
+                <div class="card medium hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://source.unsplash.com/u2Ru4QBXA5Q/">
+                  </div>
+                  <!-- looks bad on mobile, too tall -->
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-action">
+                    <!-- use icons here instead & add tooltip for text -->
+                    <a href="#">View link</a>
+                    <a href="#">GitHub link</a>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
               </div>
-            </img>
-          </li>
-        </ul>
-      </div>
 
-
-      <!-- MODAL -->
-      <h1>MODAL</h1>
-
-      <!-- MODAL TRIGGERS -->
-      <a class="waves-effect waves-light btn light-blue darken-4 modal-trigger" href="#modal1">Modal One</a>
-      <button data-target="modal2" class="btn modal-trigger orange darken-3 waves-effect">Modal Two</button>
-
-      <!-- MODAL STRUCTURE -->
-      <div id="modal1" class="modal">
-        <div class="modal-content">
-          <h4>Modal One Header</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus enim dignissimos quisquam voluptate dolor deserunt, quia rem, fuga placeat earum? Explicabo quisquam ea quidem qui, facilis possimus nostrum facere numquam voluptatibus accusamus reiciendis ipsam optio nisi vel ullam perspiciatis laboriosam adipisci nesciunt libero labore tenetur, provident, itaque. Ab voluptatum rerum, nobis mollitia soluta pariatur nemo.</p>
+                <div class="col s12 m6">
+                  <div class="card medium hoverable">
+                      <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="https://source.unsplash.com/u2Ru4QBXA5Q/">
+                    </div>
+                    <!-- looks bad on mobile, too tall -->
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                    </div>
+                    <div class="card-action">
+                      <!-- use icons here instead & add tooltip for text -->
+                      <a href="#">View link</a>
+                      <a href="#">GitHub link</a>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-action btn modal-close waves-effect waves-green">Close</a>
-        </div>
-      </div>
 
-      <div id="modal2" class="modal">
-        <div class="modal-content">
-          <h4>Modal Two Header</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita recusandae voluptatum dignissimos nesciunt esse nostrum vero, nihil aliquid ratione fugit aliquam illo iure officiis eveniet qui, dolorem assumenda voluptates hic dicta libero laborum? Nulla, dolore, dignissimos, magni recusandae ut doloremque sunt nemo ullam quis nam perferendis eaque, molestiae quam similique.</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-action btn modal-close waves-effect waves-green">Agree</a>
-        </div>
-      </div>
-
-
-      <!-- SIDENAV -->
-      <h1>SIDENAV</h1>
-      <ul id="slide-out" class="sidenav">
-        <li><div class="user-view">
-          <div class="background">
-            <img src="https://source.unsplash.com/random/300x300/?office">
+        <!-- CONTACT  -->
+        <div class="row cyan accent-4">
+          <div class="container section scrollspy" id="contact">
+            <h4 class="center white-text">Contact</h4>
+            <br><br>
+            <div class="row">
+              <div class="col s12 l4"><div class="card-panel z-depth-3 grey lighten-4">
+                <section class="section-map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.2256555022122!2d-71.05864868454373!3d42.35902997918691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370842d7d5b67%3A0xe778bd054c0b819c!2s60+State+Street%2C+Boston%2C+MA+02109!5e0!3m2!1sen!2sus!4v1556371718143!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </section>
+              </div></div>
+              <div class="col s12 l8">
+                <div class="card-panel z-depth-3 grey lighten-4">
+                  <form role="form" action="https://formspree.io/contact@tim-corley.com" method="POST">
+                    <div class="input-field">
+                      <input type="text" id="name" name="name">
+                      <label for="name" class="active">NAME</label>
+                    </div>
+                    <div class="input-field">
+                      <input type="email" id="email" class="validate" name="_replyto">
+                      <label for="email" class="active">EMAIL</label>
+                    </div>
+                    <div class="input-field">
+                      <textarea type="text" class="materialize-textarea" name="message"></textarea>
+                      <label for="textarea" class="active">MESSAGE</label>
+                    </div>
+                    <div class="center">
+                      <button class="btn cyan accent-4" type="submit" value="Send"><i class="material-icons left">email</i>Send</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
-          <a href="#user"><img class="circle" src="https://source.unsplash.com/random/150x150/?cat"></a>
-          <a href="#name"><span class="black-text name">C. Fluffy</span></a>
-          <a href="#email"><span class="black-text email">Web Development</span></a>
-        </div></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-        <li><a href="#!">Second Link</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Subheader</a></li>
-        <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-      </ul>
-      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-
-      <!-- TABS -->
-      <h1>TABS</h1>
-      <div class="row">
-        <div class="col s12">
-          <ul class="tabs">
-            <li class="tab col s3"><a href="#test1">Test one</a></li>
-            <li class="tab col s3"><a class="active" href="#test2">Test Two</a></li>
-            <li class="tab col s3 disabled"><a href="#test3">Test Three (Disabled)</a></li>
-            <li class="tab col s3"><a href="#test4">Test Four</a></li>
-          </ul>
         </div>
-        <div id="test1" class="col s12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima dolore eveniet, eligendi ad nostrum a repudiandae, voluptate ab sapiente qui magni, architecto.</div>
-        <div id="test2" class="col s12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, consectetur accusamus mollitia laudantium architecto voluptatibus excepturi officia nisi! Soluta quas dicta earum obcaecati voluptatem cumque.</div>
-        <div id="test3" class="col s12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem amet nesciunt a, aspernatur non recusandae sit, dignissimos repellat excepturi. Voluptatum!</div>
-        <div id="test4" class="col s12">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id provident, eum facere saepe dolorum sunt dolores, similique, eos nemo optio animi.</div>
+    </main>
+    <footer class="page-footer black">
+      <div class=" center footer-copyright">
+        <div class="container">
+        Copyright © 2019 Tim Corley
+        </div>
       </div>
-
-
-
-
-
-
-
-    </div> <!-- ./container-->
-
-
-
-
-    <div style="height:500px"></div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
         $('.carousel').carousel();

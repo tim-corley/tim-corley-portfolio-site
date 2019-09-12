@@ -2595,15 +2595,15 @@ table span.badge {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 90%; }
+  width: 100%; }
 
 @media only screen and (min-width: 601px) {
   .container {
-    width: 85%; } }
+    width: 100%; } }
 
 @media only screen and (min-width: 993px) {
   .container {
-    width: 70%; } }
+    width: 100%; } }
 
 .col .row {
   margin-left: -0.75rem;
@@ -3488,10 +3488,10 @@ small {
   .card.small, .card.medium, .card.large {
     position: relative; }
     .card.small .card-image, .card.medium .card-image, .card.large .card-image {
-      max-height: 60%;
+      max-height: 70%;
       overflow: hidden; }
     .card.small .card-image + .card-content, .card.medium .card-image + .card-content, .card.large .card-image + .card-content {
-      max-height: 40%; }
+      max-height: 50%; }
     .card.small .card-content, .card.medium .card-content, .card.large .card-content {
       max-height: 100%;
       overflow: hidden; }
@@ -3552,6 +3552,7 @@ small {
       padding: 24px; }
   .card .card-content {
     padding: 24px;
+    padding-top: 16px;
     border-radius: 0 0 2px 2px; }
     .card .card-content p {
       margin: 0; }
@@ -3570,7 +3571,7 @@ small {
       border-radius: 0 0 2px 2px; }
     .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
       color: #ffab40;
-      margin-right: 24px;
+      margin: 0 7px;
       transition: color .3s ease;
       text-transform: uppercase; }
       .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover {
@@ -6615,9 +6616,6 @@ input[type=range]::-ms-thumb {
 .py-1 {
   padding: 1rem 0; }
 
-.p-sides {
-  padding-left: 2rem; }
-
 .m-2 {
   margin: 2rem; }
 
@@ -6629,9 +6627,6 @@ input[type=range]::-ms-thumb {
 
 .py-2 {
   padding: 2rem 0; }
-
-.p-sides {
-  padding-left: 2rem; }
 
 .m-3 {
   margin: 3rem; }
@@ -6645,9 +6640,6 @@ input[type=range]::-ms-thumb {
 .py-3 {
   padding: 3rem 0; }
 
-.p-sides {
-  padding-left: 2rem; }
-
 .m-4 {
   margin: 4rem; }
 
@@ -6659,9 +6651,6 @@ input[type=range]::-ms-thumb {
 
 .py-4 {
   padding: 4rem 0; }
-
-.p-sides {
-  padding-left: 2rem; }
 
 .m-5 {
   margin: 5rem; }
@@ -6676,4 +6665,29 @@ input[type=range]::-ms-thumb {
   padding: 5rem 0; }
 
 .p-sides {
-  padding-left: 2rem; }
+  padding: 0 1rem !important; }
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.info-list > li {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #ccc 1px dotted; }
+
+.info-list li:last-child {
+  border: none; }
+
+ion-icon {
+  vertical-align: middle;
+  padding-bottom: 3px;
+  font-size: 2rem;
+  margin: 0 0.3rem; }
+
+.just {
+  text-align: justify; }
