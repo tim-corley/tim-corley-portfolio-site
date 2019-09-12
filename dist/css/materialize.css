@@ -3244,7 +3244,7 @@ nav {
       float: left;
       padding: 0; }
       nav ul li.active {
-        background-color: rgba(0, 0, 0, 0.1); }
+        background-color: rgba(255, 255, 255, 0.1); }
     nav ul a {
       transition: background-color .3s;
       font-size: 1rem;
@@ -3260,7 +3260,9 @@ nav {
           height: inherit;
           line-height: inherit; }
       nav ul a:hover {
-        background-color: rgba(0, 0, 0, 0.1); }
+        background-color: rgba(255, 255, 255, 0.1); }
+      nav ul a.active {
+        background-color: rgba(255, 255, 255, 0.1); }
     nav ul.left {
       float: left; }
   nav form {
@@ -3730,6 +3732,7 @@ small {
 
 .backdrop {
   position: absolute;
+  border-radius: 18px;
   opacity: 0;
   height: 7px;
   width: 14px;
@@ -6145,7 +6148,7 @@ input[type=range]::-ms-thumb {
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 325px;
   perspective: 500px;
   transform-style: preserve-3d;
   transform-origin: 0% 50%; }
@@ -6163,7 +6166,7 @@ input[type=range]::-ms-thumb {
     .carousel.carousel-slider .carousel-item {
       width: 100%;
       height: 100%;
-      min-height: 400px;
+      min-height: 250px;
       position: absolute;
       top: 0;
       left: 0; }
@@ -6178,6 +6181,7 @@ input[type=range]::-ms-thumb {
     width: 200px;
     height: 200px;
     position: absolute;
+    padding-top: 20px;
     top: 0;
     left: 0; }
     .carousel .carousel-item > img {
@@ -6691,3 +6695,12 @@ ion-icon {
 
 .just {
   text-align: justify; }
+
+#btm-contact {
+  margin-top: 25px; }
+
+@media only screen and (max-width: 992px) {
+  .parallax-container {
+    height: 350px; }
+  .carousel {
+    height: 200px; } }

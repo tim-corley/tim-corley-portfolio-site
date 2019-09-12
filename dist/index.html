@@ -17,10 +17,10 @@
             <div class="nav-wrapper">
               <a href="index.html" class="brand-logo">Tim Corley</a>
                 <ul class="right hide-on-med-and-down">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#about" data-scroll="about">About</a></li>
+                  <li><a href="#skills" data-scroll="skills">Skills</a></li>
+                  <li><a href="#projects" data-scroll="projects">Projects</a></li>
+                  <li><a href="#contact" data-scroll="contact">Contact</a></li>
                 </ul>
               <!-- SIDENAV -->
               <ul class="right sidenav" id="nav-mobile">
@@ -54,7 +54,6 @@
         <div class="dark-overlay">
         <div class="section no-pad-bot">
           <div class="container">
-            <br><br>
             <h1 class="header center white-text">Welcome!</h1>
             <h2 class="center white-text">My name is Tim.</h2>
             <div class="row center">
@@ -62,7 +61,6 @@
             </div>
             <div class="row center">
               <a class="waves-effect waves-light btn cyan accent-4" href="#contact">Email Me<i class="material-icons left">email</i></a>
-              <!-- <button class="btn cyan accent-4"><a href="#contact"><i class="material-icons left">email</i>Email Me</a></button> -->
             </div>
             <br><br>
           </div>
@@ -71,9 +69,9 @@
         </div>
       </div>
 
-
+      <!-- BIO -->
       <div class="container">
-        <div class="section" style="width: 100%">
+        <div class="section scrollspy" data-anchor="about" id="about" style="width: 100%">
           <!--   ABOUT (w/ Resume)-->
           <div class="row">
             <div class="col s12 l4">
@@ -113,22 +111,46 @@
       </div>
 
       <!-- SKILLS  -->
-      <div class="parallax-container valign-wrapper scrollspy" id="skills">
+      <div class="parallax-container valign-wrapper">
         <div class="dark-overlay">
-          <div class="section no-pad-bot">
+          <div class="section no-pad-bot scrollspy" data-anchor="skills" id="skills">
             <div class="container">
               <div class="row center">
                 <h3 class="header col s12" style="color: #fff;">Skills</h3>
               </div>
+                <div class="carousel">
+                  <a href="#one!" class="carousel-item" style="height:100%">
+                    <img src="img/html.png" alt="">
+                  </a>
+                  <a href="#two!" class="carousel-item" style="height:100%">
+                    <img src="img/css.png" alt="">
+                  </a>
+                  <a href="#three!" class="carousel-item">
+                    <img src="img/javascript.svg" alt="">
+                  </a>
+                  <a href="#four!" class="carousel-item">
+                    <img src="img/python.svg" alt="">
+                  </a>
+                  <a href="#five!" class="carousel-item">
+                    <img src="img/git.svg" alt="">
+                  </a>
+                  <a href="#four!" class="carousel-item">
+                    <img src="img/sass.svg" alt="">
+                  </a>
+                  <a href="#five!" class="carousel-item">
+                    <img src="img/gcp.svg" alt="">
+                  </a>
+                </div>
             </div>
           </div>
           <div class="parallax"><img src="https://source.unsplash.com/aHhhdKUP77M/" alt="img"></div>
         </div>
       </div>
+      <div id="projects" style="margin: 0; padding-top: 1rem; height:0px"></div> <!-- placing here b/c of sticky top nav-->
 
       <!-- PROJECTS -->
-      <div class="container section scrollspy" id="projects">
-        <div class="section">
+      <div class="container">
+        <div class="section scrollspy" data-anchor="projects" id="projects">
           <h4 class="center">Projects</h4>
           <br>
             <div class="row">
@@ -143,9 +165,8 @@
                     <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
                   </div>
                   <div class="card-action">
-                    <!-- use icons here instead & add tooltip for text -->
-                    <a href="#">View link</a>
-                    <a href="#">GitHub link</a>
+                    <a href="https://tim-corley.com"><i style="vertical-align: middle; padding-bottom: 3px; font-size: 2.15rem; margin: 0 0.3rem;"class="material-icons tooltipped" data-position="right" data-tooltip="View Site">pageview</i></a>
+                    <a href="https://github.com/tim-corley"><ion-icon name="logo-github" class="tooltipped" data-position="right" data-tooltip="View Code"></ion-icon></a>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -164,9 +185,8 @@
                     <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
                   </div>
                   <div class="card-action">
-                    <!-- use icons here instead & add tooltip for text -->
-                    <a href="#">View link</a>
-                    <a href="#">GitHub link</a>
+                    <a href="https://tim-corley.com"><i style="vertical-align: middle; padding-bottom: 3px; font-size: 2.15rem; margin: 0 0.3rem;"class="material-icons tooltipped" data-position="right" data-tooltip="View Site">pageview</i></a>
+                    <a href="https://github.com/tim-corley"><ion-icon name="logo-github" class="tooltipped" data-position="right" data-tooltip="View Code"></ion-icon></a>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -185,9 +205,8 @@
                     <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
                   </div>
                   <div class="card-action">
-                    <!-- use icons here instead & add tooltip for text -->
-                    <a href="#">View link</a>
-                    <a href="#">GitHub link</a>
+                    <a href="https://tim-corley.com"><i style="vertical-align: middle; padding-bottom: 3px; font-size: 2.15rem; margin: 0 0.3rem;"class="material-icons tooltipped" data-position="right" data-tooltip="View Site">pageview</i></a>
+                    <a href="https://github.com/tim-corley"><ion-icon name="logo-github" class="tooltipped" data-position="right" data-tooltip="View Code"></ion-icon></a>
                   </div>
                   <div class="card-reveal">
                     <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -196,41 +215,48 @@
                 </div>
               </div>
 
-                <div class="col s12 m6">
-                  <div class="card medium hoverable">
-                      <div class="card-image waves-effect waves-block waves-light">
-                      <img class="activator" src="https://source.unsplash.com/u2Ru4QBXA5Q/">
-                    </div>
-                    <!-- looks bad on mobile, too tall -->
-                    <div class="card-content">
-                      <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                    </div>
-                    <div class="card-action">
-                      <!-- use icons here instead & add tooltip for text -->
-                      <a href="#">View link</a>
-                      <a href="#">GitHub link</a>
-                    </div>
-                    <div class="card-reveal">
-                      <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                    </div>
+              <div class="col s12 m6">
+                <div class="card medium hoverable">
+                    <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://source.unsplash.com/u2Ru4QBXA5Q/">
+                  </div>
+                  <!-- looks bad on mobile, too tall -->
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://tim-corley.com"><i style="vertical-align: middle; padding-bottom: 3px; font-size: 2.15rem; margin: 0 0.3rem;"class="material-icons tooltipped" data-position="right" data-tooltip="View Site">pageview</i></a>
+                    <a href="https://github.com/tim-corley"><ion-icon name="logo-github" class="tooltipped" data-position="right" data-tooltip="View Code"></ion-icon></a>
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
 
         <!-- CONTACT  -->
         <div class="row cyan accent-4">
-          <div class="container section scrollspy" id="contact">
+          <div class="container section scrollspy" data-anchor="contact" id="contact">
             <h4 class="center white-text">Contact</h4>
             <br><br>
             <div class="row">
-              <div class="col s12 l4"><div class="card-panel z-depth-3 grey lighten-4">
-                <section class="section-map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.2256555022122!2d-71.05864868454373!3d42.35902997918691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370842d7d5b67%3A0xe778bd054c0b819c!2s60+State+Street%2C+Boston%2C+MA+02109!5e0!3m2!1sen!2sus!4v1556371718143!5m2!1sen!2sus" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-                </section>
-              </div></div>
+              <div class="col s12 l4">
+                <div class="card-panel z-depth-3 grey lighten-4">
+                  <section class="section-map">
+                    <iframe width="100%" height="100%" frameborder="0" style="border:0"
+                      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJGzE9DS1l44kRoOhiASS_fHg&key=AIzaSyBoqd4ZZugV_SQO6LE6saEqbH78nbruFVw" allowfullscreen>
+                    </iframe>
+                  </section>
+                </div>
+                  <div id="btm-contact">
+                    <p class="center-align grey-text text-lighten-4">Tim Corley | Boston, MA</p>
+                    <p class="center-align grey-text text-lighten-4">(650) 880-2115 | contact@tim-corley.com</p>
+                  </div>
+              </div>
               <div class="col s12 l8">
                 <div class="card-panel z-depth-3 grey lighten-4">
                   <form role="form" action="https://formspree.io/contact@tim-corley.com" method="POST">
@@ -255,6 +281,7 @@
             </div>
           </div>
         </div>
+        <div style="height: 150px"></div>
     </main>
     <footer class="page-footer black">
       <div class=" center footer-copyright">
@@ -282,8 +309,27 @@
         $('.sidenav').sidenav();
         $('.tabs').tabs();
         $('.parallax').parallax();
+        $('.scrollspy').scrollSpy();
         // // trigger a toast
         // M.toast({html: 'Welcome...'}, 1500);
+
+        // ADD ACTIVE TO NAV ITEM ON SCROLL
+        $(window).scroll(function() {
+            var windscroll = $(window).scrollTop();
+            if (windscroll >= 100) {
+                $('nav').addClass('fixed');
+                $('.wrapper section').each(function(i) {
+                    if ($(this).position().top <= windscroll - 20) {
+                        $('nav a.active').removeClass('active');
+                        $('nav a').eq(i).addClass('active');
+                    }
+                });
+            } else {
+                $('nav').removeClass('fixed');
+                $('nav a.active').removeClass('active');
+                $('nav a:first').addClass('active');
+            }
+        }).scroll();
       });
     </script>
   </body>
