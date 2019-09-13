@@ -2188,7 +2188,7 @@ ul.staggered-list li {
 /*********************
   Media Query Classes
 **********************/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .hide-on-small-only, .hide-on-small-and-down {
     display: none !important; } }
 
@@ -2200,7 +2200,7 @@ ul.staggered-list li {
   .hide-on-med-and-up {
     display: none !important; } }
 
-@media only screen and (min-width: 600px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .hide-on-med-only {
     display: none !important; } }
 
@@ -2220,11 +2220,11 @@ ul.staggered-list li {
   .show-on-large {
     display: block !important; } }
 
-@media only screen and (min-width: 600px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .show-on-medium {
     display: block !important; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .show-on-small {
     display: block !important; } }
 
@@ -2236,7 +2236,7 @@ ul.staggered-list li {
   .show-on-medium-and-down {
     display: block !important; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .center-on-small-only {
     text-align: center; } }
 
@@ -3377,83 +3377,83 @@ small {
   .flow-text {
     font-size: 1.2rem; } }
 
-@media only screen and (min-width: 390px) {
+@media only screen and (min-width: 381.6px) {
   .flow-text {
     font-size: 1.224rem; } }
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 403.2px) {
   .flow-text {
     font-size: 1.248rem; } }
 
-@media only screen and (min-width: 450px) {
+@media only screen and (min-width: 424.8px) {
   .flow-text {
     font-size: 1.272rem; } }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 446.4px) {
   .flow-text {
     font-size: 1.296rem; } }
 
-@media only screen and (min-width: 510px) {
+@media only screen and (min-width: 468px) {
   .flow-text {
     font-size: 1.32rem; } }
 
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 489.6px) {
   .flow-text {
     font-size: 1.344rem; } }
 
-@media only screen and (min-width: 570px) {
+@media only screen and (min-width: 511.2px) {
   .flow-text {
     font-size: 1.368rem; } }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 532.8px) {
   .flow-text {
     font-size: 1.392rem; } }
 
-@media only screen and (min-width: 630px) {
+@media only screen and (min-width: 554.4px) {
   .flow-text {
     font-size: 1.416rem; } }
 
-@media only screen and (min-width: 660px) {
+@media only screen and (min-width: 576px) {
   .flow-text {
     font-size: 1.44rem; } }
 
-@media only screen and (min-width: 690px) {
+@media only screen and (min-width: 597.6px) {
   .flow-text {
     font-size: 1.464rem; } }
 
-@media only screen and (min-width: 720px) {
+@media only screen and (min-width: 619.2px) {
   .flow-text {
     font-size: 1.488rem; } }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 640.8px) {
   .flow-text {
     font-size: 1.512rem; } }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 662.4px) {
   .flow-text {
     font-size: 1.536rem; } }
 
-@media only screen and (min-width: 810px) {
+@media only screen and (min-width: 684px) {
   .flow-text {
     font-size: 1.56rem; } }
 
-@media only screen and (min-width: 840px) {
+@media only screen and (min-width: 705.6px) {
   .flow-text {
     font-size: 1.584rem; } }
 
-@media only screen and (min-width: 870px) {
+@media only screen and (min-width: 727.2px) {
   .flow-text {
     font-size: 1.608rem; } }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 748.8px) {
   .flow-text {
     font-size: 1.632rem; } }
 
-@media only screen and (min-width: 930px) {
+@media only screen and (min-width: 770.4px) {
   .flow-text {
     font-size: 1.656rem; } }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 792px) {
   .flow-text {
     font-size: 1.68rem; } }
 
@@ -3504,8 +3504,12 @@ small {
       right: 0; }
   .card.small {
     height: 300px; }
-  .card.medium {
-    height: 400px; }
+  @media only screen and (max-width: 992px) {
+    .card.medium {
+      height: 370px; } }
+  @media only screen and (min-width: 993px) {
+    .card.medium {
+      height: 400px; } }
   .card.large {
     height: 500px; }
   .card.horizontal {
@@ -3597,7 +3601,7 @@ small {
   display: block;
   position: fixed;
   z-index: 10000; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     #toast-container {
       min-width: 100%;
       bottom: 0%; } }
@@ -3638,7 +3642,7 @@ small {
     margin-left: 3rem; }
   .toast.rounded {
     border-radius: 24px; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .toast {
       width: 100%;
       border-radius: 0; } }
@@ -4847,7 +4851,7 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
     .input-field .prefix ~ input {
       width: 86%;
       width: calc(100% - 3rem); } }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 768px) {
     .input-field .prefix ~ input {
       width: 80%;
       width: calc(100% - 3rem); } }
@@ -5586,7 +5590,7 @@ input[type=range]::-ms-thumb {
   .sidenav li > a {
     color: rgba(0, 0, 0, 0.87);
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     height: 48px;
     line-height: 48px;
@@ -5618,7 +5622,7 @@ input[type=range]::-ms-thumb {
     cursor: initial;
     pointer-events: none;
     color: rgba(0, 0, 0, 0.54);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 48px; }
     .sidenav .subheader:hover {
@@ -5635,6 +5639,8 @@ input[type=range]::-ms-thumb {
     .sidenav .user-view .background {
       overflow: hidden;
       position: absolute;
+      border-top: #00b8d4 3px solid;
+      border-bottom: #00b8d4 3px solid;
       top: 0;
       right: 0;
       bottom: 0;
@@ -5647,7 +5653,7 @@ input[type=range]::-ms-thumb {
       width: 64px; }
     .sidenav .user-view .name,
     .sidenav .user-view .email {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 24px; }
     .sidenav .user-view .name {
       margin-top: 16px;
@@ -6689,9 +6695,14 @@ input[type=range]::-ms-thumb {
 
 ion-icon {
   vertical-align: middle;
-  padding-bottom: 3px;
+  padding-bottom: 0.25rem;
   font-size: 2rem;
   margin: 0 0.3rem; }
+  @media only screen and (max-width: 992px) {
+    ion-icon {
+      padding-bottom: 0.05rem;
+      font-size: 2.5rem;
+      margin: 0 0.1rem; } }
 
 .just {
   text-align: justify; }
@@ -6699,8 +6710,16 @@ ion-icon {
 #btm-contact {
   margin-top: 25px; }
 
+#sidenav-social {
+  display: flex;
+  padding-top: 1rem; }
+
 @media only screen and (max-width: 992px) {
   .parallax-container {
     height: 350px; }
+  .skl {
+    margin-bottom: 1px; }
   .carousel {
-    height: 200px; } }
+    height: 255px; }
+  .buffer {
+    height: 0px !important; } }

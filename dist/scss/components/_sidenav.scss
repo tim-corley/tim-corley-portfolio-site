@@ -106,6 +106,8 @@
     .background {
       overflow: hidden;
       position: absolute;
+      border-top: $third-color 3px solid;
+      border-bottom: $third-color 3px solid;
       top: 0;
       right: 0;
       bottom: 0;

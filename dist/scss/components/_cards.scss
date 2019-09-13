@@ -54,7 +54,12 @@
   }
 
   &.medium {
-    height: 400px;
+    @media #{$medium-and-down} {
+      height: 370px;
+    }
+    @media #{$large-and-up} {
+      height: 400px;
+    }
   }
 
   &.large {
