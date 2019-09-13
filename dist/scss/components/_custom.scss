@@ -1,0 +1,90 @@
+// Margin & Padding
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts {
+  // All Around Margin
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  // Vertical Margin
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  // All Around Padding
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  // Vertical Padding
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+}
+
+.p-sides {
+  padding: 0 1rem !important;
+}
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.info-list {
+  & > li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: #ccc 1px dotted;
+  }
+
+  li:last-child {
+    border:none;
+  }
+}
+
+ion-icon {
+  vertical-align: middle;
+  padding-bottom: 0.25rem;
+  font-size: 2rem;
+  margin: 0 0.3rem;
+
+  @media #{$medium-and-down} {
+    padding-bottom: 0.05rem;
+    font-size: 2.5rem;
+    margin: 0 0.1rem;
+  }
+}
+
+.just {
+  text-align: justify;
+}
+
+#btm-contact {
+  margin-top: 25px;;
+}
+
+#sidenav-social {
+  display: flex;
+  padding-top: 1rem;
+}
+
+@media #{$medium-and-down} {
+  .parallax-container {
+    height: 350px;
+  }
+  .skl {
+    margin-bottom: 1px;
+  }
+  .carousel {
+    height: 255px;
+  }
+  .buffer {
+    height: 0px !important;
+  }
+}
