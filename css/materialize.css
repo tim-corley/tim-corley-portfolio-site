@@ -3210,13 +3210,19 @@ nav {
     display: inline-block;
     font-size: 2.1rem;
     padding: 0; }
-    nav .brand-logo.center {
+    nav .brand-logo.center img {
       left: 50%;
       transform: translateX(-50%); }
+    nav .brand-logo img {
+      height: 64px;
+      padding: 0.25rem 0; }
     @media only screen and (max-width: 992px) {
       nav .brand-logo {
         left: 50%;
         transform: translateX(-50%); }
+        nav .brand-logo img {
+          height: 54px;
+          padding: 0.25rem 0; }
         nav .brand-logo.left, nav .brand-logo.right {
           padding: 0;
           transform: none; }
